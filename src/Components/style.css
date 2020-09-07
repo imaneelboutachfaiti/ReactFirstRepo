@@ -1,0 +1,45 @@
+
+.counter {
+    width: fit-content;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color : palegoldenrod;
+    margin-left: 4mm;
+    }
+h1{
+    color : rgb(139, 91, 158);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: oblique;
+    text-align: center;
+}
+label{
+    font-family: 'Times New Roman', Times, serif;
+    font-style: oblique;
+    width: 2cm;
+}
+.SubmitBtn{
+    align-items: center;
+    background-color: lightblue;
+    width: 2cm;
+    font-family: 'Times New Roman', Times, serif;
+}
+.dropdown{
+      background-color: rgb(212, 151, 151);
+      width: 15%;
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 100%;
+      font-style: oblique;
+      position: relative;
+      display: inline-block;
+}
+.inputform{
+    border: 3px solid rgb(180, 152, 152);
+    background-color: rgb(218, 186, 160);
+}
+.login {
+
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    display: -moz-inline-stack;
+    padding-top: 1cm;
+    
+}

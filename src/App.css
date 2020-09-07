@@ -23,9 +23,18 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+label {
+  font-size: medium;
+  text-align: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin: 1cm;
+}
 
 .App-link {
   color: #61dafb;
+}
+input {
+ background-color : rgb(180, 170, 176);
 }
 
 @keyframes App-logo-spin {
