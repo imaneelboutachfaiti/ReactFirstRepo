@@ -11,6 +11,8 @@ function List(props) {
                     <td>First Name</td>
                     <td>Last Name</td>
                     <td>Mobile phone</td>
+                    <td>Gender</td>
+                    <td>Work Day</td>
                     <td>Email</td>
                     <td>Message</td>
                 </tr>
@@ -20,6 +22,8 @@ function List(props) {
                     <tr><td >{item.FirstName}</td>
                         <td >{item.LastName}</td>
                         <td>{item.MobilePhone}</td>
+                        <td>{item.Gender}</td>
+                        <td>{item.SelectedDay}</td>
                         <td>{item.Email}</td>
                         <td>{item.Message}</td>
                     </tr>

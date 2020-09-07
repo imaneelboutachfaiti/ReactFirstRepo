@@ -8,7 +8,7 @@ function Form(props) {
     const [LastName, setLastName] = useState('');
     const [FirstName, setFirstName] = useState('');
     const [MobilePhone, setMobilePhone] = useState('');
-    const [SelectedValue, setSelectedValue] = useState('');
+    const [Gender, setGender] = useState('');
     const [SelectedDay, setSelectedDay] = useState('');
     const [Email, setEmail] = useState('');
     const [BirthDate, setBirthDate] = useState('');
@@ -19,15 +19,15 @@ function Form(props) {
         setMessage(e.target.value);
     }
     function handleGender(e) {
-        setSelectedValue(e.target.value);
+        setGender(e.target.value);
     }
     function handleWorkDay(e) {
         setSelectedDay(e.target.value);
     }
     const options = [
         { value: '0', label: 'Please select..' },
-        { value: 'f', label: 'Female' },
-        { value: 'm', label: 'Male' }
+        { value: 'female', label: 'Female' },
+        { value: 'male', label: 'Male' }
     ]
 
     const workDays = [
@@ -62,7 +62,7 @@ function Form(props) {
         setData([...Data, {
             FirstName: FirstName, LastName: LastName,
             MobilePhone: MobilePhone, Message: Message,
-            Email: Email
+            Gender: Gender, SelectedDay: SelectedDay, Email: Email
         }])
         setFirstName('');
         setLastName('');
@@ -84,7 +84,7 @@ function Form(props) {
             <br /> <br />
             <label>Email : </label>
             <InputForm var={Email} handleFunction={handleEmail} placeholder="Email" /> <br /><br />
-            <DropDown label="Gender: " options={options} SelectedValue={SelectedValue} handleChange={handleGender} />
+            <DropDown label="Gender: " options={options} SelectedValue={Gender} handleChange={handleGender} />
             <br />
             <DropDown label="Work day: " options={workDays} SelectedValue={SelectedDay} handleChange={handleWorkDay} />
 
