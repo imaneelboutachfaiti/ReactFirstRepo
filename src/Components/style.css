@@ -16,6 +16,11 @@ label{
     font-style: oblique;
     width: 2cm;
 }
+th,td {
+    border: 1px solid #999;
+  padding: 0.5rem;
+  border-color: lightcoral;
+  }
 .SubmitBtn{
     align-items: center;
     background-color: lightblue;

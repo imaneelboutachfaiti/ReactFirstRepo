@@ -59,7 +59,16 @@ function Form(props) {
     }
 
     function save() {
-        setData([...Data, { FirstName: FirstName, LastName: LastName }])
+        setData([...Data, {
+            FirstName: FirstName, LastName: LastName,
+            MobilePhone: MobilePhone, Message: Message,
+            Email: Email
+        }])
+        setFirstName('');
+        setLastName('');
+        setMessage('');
+        setEmail('');
+        setMobilePhone('');
     }
 
     return (
@@ -85,6 +94,8 @@ function Form(props) {
             <br />
             <br />
             <button className="SubmitBtn" onClick={save}>Save</button>
+            <br />
+            <br />
             <List data={Data} />
         </div>
     );
